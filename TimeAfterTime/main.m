@@ -11,7 +11,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
    
-        NSDate *now = [NSDate date];
+        // NSDate *now = [NSDate date];
+        // Same as above, but using alloc and init
+        NSDate *now = [[NSDate alloc] init];
         NSLog(@" This NSDate object lives at %p", now);
         NSLog(@" The date is %@", now);
         
